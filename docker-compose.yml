@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  extractor:
+    build: .
+    volumes:
+      - ./input:/workspace/input
+      - ./output:/workspace/output
+      - .:/workspace
+    command: python ./split.py
