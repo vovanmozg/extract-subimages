@@ -15,6 +15,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
+#### From Docker Hub
+
+```bash
+docker pull vovan/extract_subimages
+```
+
+[DockerHub page](https://hub.docker.com/r/vovan/extract_subimages)
+
+#### From GitHub
+
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Run the following command to build and start the Docker container:
