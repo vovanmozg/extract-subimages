@@ -32,6 +32,7 @@ def extract_and_save_objects(input_folder, output_folder, min_area, output_forma
 
             object_number = 0
             for contour in contours:
+                logging.info("Processing contour")
                 # Check area of contour
                 area = cv2.contourArea(contour)
                 if area > min_area:
@@ -57,4 +58,4 @@ def extract_and_save_objects(input_folder, output_folder, min_area, output_forma
                     object_number += 1
 
 
-extract_and_save_objects('/workspace/input', '/workspace/output', min_area=400)
+extract_and_save_objects('/workspace/input', '/workspace/output', min_area=400, output_format='png')
